@@ -1,5 +1,6 @@
 # automation_framework
-selenium for python automation framework design.
+
+python automation framework design for UI test .
 
 this framework is to test login  "uat.ormuco.com" with different username and password
 scrpite languange is Python3.
