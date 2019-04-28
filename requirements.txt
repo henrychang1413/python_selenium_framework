@@ -1,0 +1,8 @@
+# these are python packages for framework
+python == 3.7
+selenium>=2.0
+unittest
+configparser
+HTMLTestRunner
+
+
