@@ -1,9 +1,8 @@
 # automation_framework
-selenium for python automation framework design
+selenium for python automation framework design.
 
 this framework is to test login  "uat.ormuco.com" with different username and password
-scrpite languange is Python.
-
+scrpite languange is Python3.
 
 1). Install all the dependencies
     pip install -r requirements.txt
@@ -11,6 +10,7 @@ scrpite languange is Python.
 2). Tests are located inside my_framework/testcase
     my_framework/testcase
 
+3). execute python unittest command to run.
 
 
 
