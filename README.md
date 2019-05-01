@@ -1,4 +1,4 @@
-# automation_framework introduction
+# Automation_framework introduction
 
 python automation framework design for UI test and interface test.  this framework use Python3 unittest framework. include 3 suites.
 
