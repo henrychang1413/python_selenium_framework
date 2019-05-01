@@ -3,6 +3,7 @@
 python automation framework design for UI test and interface test.
 
 this framework test modules:
+
 a: test login  "uat.ormuco.com" with different username and password
 b: test google search different content.
 c: test number convert functions
@@ -21,5 +22,7 @@ Use Python3 languange.
     python -m python -m unittest test_suite
 
 
+4) test report 
 
+![alt text](https://github.com/henrychang1413/python_selenium_framework/blob/master/report.png)
 
