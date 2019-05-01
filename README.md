@@ -13,7 +13,7 @@ c: test number convert functions, such as binary convert decimal, decimal conver
 1). Install all the dependencies
     pip install -r requirements.txt
 
-2). Tests are located inside my_framework/testcase
+2). Testcases are located inside testcase
     my_framework/testcase
 
 3). execute python unittest command to run test suites.
