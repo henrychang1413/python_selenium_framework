@@ -4,10 +4,13 @@
 
 import time
 import os
+import globalparam
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.expected_conditions import staleness_of
+from selenium.webdriver.support.ui import Select, WebDriverWait
 from logger import Logger
 
 # create a logger instance
@@ -16,8 +19,26 @@ logger = Logger(logger="OperatePage").getlog()
 class OperatePage(object):
     """ define one page base class other page will inherit this page operations """
 
-    def __init__(self, driver=None):
+    def __init__(self, driver=None, url=None):
         self.driver = driver
+        self.url= url
+    # quit browser and end testing
+    def page_open(self, url=None):
+        if self.url == None:
+            self.url = globalparam.readcf.getVal("testServer", "URL")
+        else:
+            self.url = url
+
+        self.driver.get(self.url)
+        logger.info("Open url: %s" % self.url)
+
+    def page_maximize(self):
+        logger.info("Maximize the current window.")
+        self.driver.maximize_window()
+
+    def page_wait(self, deftime=20):
+        logger.info("Set implicitly wait 20 seconds.")
+        self.driver.implicitly_wait(20)
 
     # quit browser and end testing
     def page_quit(self):
@@ -32,18 +53,27 @@ class OperatePage(object):
     def page_back(self):
         self.driver.back()
         logger.info("Click back on current page.")
+        time.sleep(3)
 
     # waitting
-    def page_wait(self, seconds):
+    def page_wait(self, seconds=20):
         self.driver.implicitly_wait(seconds)
         logger.info("wait for %d seconds." % seconds)
+
+    def load_page_wait(self, tag_name, timeout=10):
+        old_page = self.driver.find_element_by_tag_name(tag_name)
+        logger.info("wait for page loading....!")
+        yield
+        WebDriverWait(self.driver, timeout).until(
+            EC.staleness_of(old_page)
+        )
+        logger.info("Page is ready")
 
     # refresh
     def page_refresh(self):
         self.driver.refresh()
         logger.info("Refresh page .")
-        time.sleep(2)
-
+        self.page_wait()
 
     # close current window
     def page_close(self):
@@ -55,9 +85,9 @@ class OperatePage(object):
 
     # save picture
     def get_windows_img(self):
-        file_path = os.path.dirname(os.path.abspath('.')) + '\\screenshots\\'
         ctime = time.strftime('%Y-%m-%d-%H_%M', time.localtime())
-        screen_name = file_path + ctime + '.png'
+        sname = ctime + '.png'
+        screen_name = os.path.join(globalparam.img_path, sname)
 
         try:
             self.driver.get_screenshot_as_file(screen_name)
@@ -138,6 +168,19 @@ class OperatePage(object):
         ele = self.find_element(selector)
         return ele.text
 
+
+    def selector_return(self, selector, text):
+        ele = self.find_element(selector)
+        ele.clear()
+        ele.send_keys(text)
+        ele.send_keys(Keys.RETURN)
+
+    def selector_submit(self, selector, text):
+        ele = self.find_element(selector)
+        ele.clear()
+        ele.send_keys(text)
+        ele.submit()
+
     # simulate keyboard to input
     def selector_input(self, selector, text):
         ele = self.find_element(selector)
@@ -182,7 +225,32 @@ class OperatePage(object):
     def switch_alert_close(self):
         self.driver.switch_to.alert().dismiss()
 
+
+
+
     @staticmethod
     def sleep(seconds):
         time.sleep(seconds)
         logger.info("Sleep for %d seconds" % seconds)
+
+
+# class wait_page_load:
+#     def __init__(self, driver=None, timeout=5):
+#         self.timeout= timeout
+#         self.driver = driver
+#     def __enter__(self):
+#         self.old_page = self.driver.find_element_by_tag_name('html')
+
+#     def __exit__(self, *_):
+#         WebDriverWait(self.driver, self.timeout).until(staleness_of(self.old_page))
+
+    # def wait_page(self):
+    #     waitpage = wait_page_load(self.driver)
+    #     with waitpage:
+    #         logger.info("Button will click!")
+    #         self.driver.find_element_by_class_name('read-more').click()
+    #         logger.info("Button clicked!")
+
+    #     logger.info("Page is ready")
+
+

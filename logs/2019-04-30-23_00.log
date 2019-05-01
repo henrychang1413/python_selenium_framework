@@ -1,0 +1,154 @@
+2019-04-30 23:00:35,937 - TestNumConvert - INFO - 
+========== setup ==========
+2019-04-30 23:00:35,938 - TestNumConvert - INFO - 
+=== test case: test_binary_convert_decimal ===
+
+2019-04-30 23:00:35,938 - TestNumConvert - INFO - binary ==> decimal : 1101 => 13
+2019-04-30 23:00:35,938 - TestNumConvert - INFO - binary ==> decimal : 1111 => 15
+2019-04-30 23:00:35,939 - TestNumConvert - INFO - binary ==> decimal : 011 => 3
+2019-04-30 23:00:35,939 - TestNumConvert - INFO - binary ==> decimal : 11110001 => 241
+2019-04-30 23:00:35,939 - TestNumConvert - INFO - 
+========== teardown ==========
+2019-04-30 23:00:35,940 - TestNumConvert - INFO - 
+========== setup ==========
+2019-04-30 23:00:35,940 - TestNumConvert - INFO - 
+=== test case: test_decimal_convert_binary ===
+
+2019-04-30 23:00:35,941 - TestNumConvert - INFO - decimal ==> binary : 13 => 1101
+2019-04-30 23:00:35,941 - TestNumConvert - INFO - decimal ==> binary : 15 => 1111
+2019-04-30 23:00:35,941 - TestNumConvert - INFO - decimal ==> binary : 3 => 11
+2019-04-30 23:00:35,941 - TestNumConvert - INFO - decimal ==> binary : 241 => 11110001
+2019-04-30 23:00:35,942 - TestNumConvert - INFO - 
+========== teardown ==========
+2019-04-30 23:00:35,942 - TestNumConvert - INFO - 
+========== setup ==========
+2019-04-30 23:00:35,942 - TestNumConvert - INFO - 
+=== test case: test_Hexadecimal_convert_decimal ===
+
+2019-04-30 23:00:35,942 - TestNumConvert - INFO - Hexadecimal ==> decimal : 1DB => 475
+2019-04-30 23:00:35,942 - TestNumConvert - INFO - Hexadecimal ==> decimal : 235 => 565
+2019-04-30 23:00:35,943 - TestNumConvert - INFO - Hexadecimal ==> decimal : FD23A => 1036858
+2019-04-30 23:00:35,943 - TestNumConvert - INFO - Hexadecimal ==> decimal : 992 => 2450
+2019-04-30 23:00:35,943 - TestNumConvert - INFO - 
+========== teardown ==========
+2019-04-30 23:00:35,944 - TestNumConvert - INFO - 
+========== setup ==========
+2019-04-30 23:00:35,944 - TestNumConvert - INFO - 
+=== test case: test_decimal_convert_Hexadecimal ===
+
+2019-04-30 23:00:35,944 - TestNumConvert - INFO - decimal ==> Hexadecimal : 475 => 1141
+2019-04-30 23:00:35,944 - TestNumConvert - INFO - decimal ==> Hexadecimal : 565 => 1381
+2019-04-30 23:00:35,944 - TestNumConvert - INFO - decimal ==> Hexadecimal : 1036858 => 17000536
+2019-04-30 23:00:35,945 - TestNumConvert - INFO - decimal ==> Hexadecimal : 2450 => 9296
+2019-04-30 23:00:35,945 - TestNumConvert - INFO - 
+========== teardown ==========
+2019-04-30 23:00:38,426 - BrowserEngine - INFO - Open Chrome browser.
+2019-04-30 23:00:40,561 - BrowserEngine - INFO - Open url: https://www.google.ca
+2019-04-30 23:00:40,562 - TestGoogleSearch - INFO - 
+=== start to test case: test1_search_gggg ===
+
+2019-04-30 23:00:40,575 - OperatePage - INFO - Refresh page .
+2019-04-30 23:00:40,586 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:00:41,005 - OperatePage - INFO - Current page title is Google
+2019-04-30 23:00:41,017 - TestGoogleSearch - INFO - Google
+2019-04-30 23:00:41,086 - OperatePage - INFO - Successe to find element by name via value: q 
+2019-04-30 23:00:45,624 - OperatePage - INFO - Current page title is gggggg - Google Search
+2019-04-30 23:00:45,630 - TestGoogleSearch - INFO - gggggg - Google Search
+2019-04-30 23:00:46,308 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_00.png 
+2019-04-30 23:00:46,309 - TestGoogleSearch - INFO - 
+=== start to test case: test1_search_python ===
+
+2019-04-30 23:00:46,326 - OperatePage - INFO - Refresh page .
+2019-04-30 23:00:46,332 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:00:47,212 - OperatePage - INFO - Current page title is gggggg - Google Search
+2019-04-30 23:00:47,229 - TestGoogleSearch - INFO - gggggg - Google Search
+2019-04-30 23:00:47,249 - OperatePage - INFO - Successe to find element by name via value: q 
+2019-04-30 23:00:51,079 - OperatePage - INFO - Current page title is python - Google Search
+2019-04-30 23:00:51,085 - TestGoogleSearch - INFO - python - Google Search
+2019-04-30 23:00:51,655 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_00.png 
+2019-04-30 23:00:56,380 - BrowserEngine - INFO - Open Chrome browser.
+2019-04-30 23:00:59,615 - BrowserEngine - INFO - Open url: https://uat.ormuco.com/login
+2019-04-30 23:00:59,616 - TestOrmucoLogin - INFO - 
+=== start to test case: test1_login_username_invalid ===
+
+2019-04-30 23:00:59,920 - OperatePage - INFO - Refresh page .
+2019-04-30 23:00:59,928 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:00:59,940 - OperatePage - INFO - Current page title is Portal - Ormuco
+2019-04-30 23:01:00,674 - OperatePage - INFO - Successe to find element by id via value: username 
+2019-04-30 23:01:01,195 - OperatePage - INFO - input ' henrychang ' 
+2019-04-30 23:01:02,219 - OperatePage - INFO - Successe to find element by id via value: password 
+2019-04-30 23:01:02,408 - OperatePage - INFO - input ' ormu1234567890 ' 
+2019-04-30 23:01:02,408 - TestOrmucoLogin - INFO - Username :henrychang  Password:ormu1234567890
+2019-04-30 23:01:03,428 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:03,440 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:03,647 - OperatePage - INFO - The element ' Sign in ' was clicked.
+2019-04-30 23:01:08,869 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_01.png 
+2019-04-30 23:01:08,887 - OperatePage - INFO - Successe to find element by xpath via value: //span[@class='warning'] 
+2019-04-30 23:01:08,909 - TestOrmucoLogin - INFO - warning mesage:The user or password is incorrect.
+2019-04-30 23:01:08,909 - TestOrmucoLogin - INFO - 
+=== start to test case: test2_login_username_invalid2 ===
+
+2019-04-30 23:01:09,220 - OperatePage - INFO - Refresh page .
+2019-04-30 23:01:09,223 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:01:09,891 - OperatePage - INFO - Successe to find element by id via value: username 
+2019-04-30 23:01:11,130 - OperatePage - INFO - input ' henrychangdfffffffffffffffffffsfsfsddsfsfsfffdddddddddddddddddddddddddddssssssfss@gmail.com ' 
+2019-04-30 23:01:13,158 - OperatePage - INFO - Successe to find element by id via value: password 
+2019-04-30 23:01:13,339 - OperatePage - INFO - input ' ormu1234567890 ' 
+2019-04-30 23:01:13,339 - TestOrmucoLogin - INFO - Username :henrychangdfffffffffffffffffffsfsfsddsfsfsfffdddddddddddddddddddddddddddssssssfss@gmail.com  Password:ormu1234567890
+2019-04-30 23:01:15,369 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:15,394 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:15,506 - OperatePage - INFO - The element ' Sign in ' was clicked.
+2019-04-30 23:01:20,339 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_01.png 
+2019-04-30 23:01:20,358 - OperatePage - INFO - Successe to find element by xpath via value: //span[@class='warning'] 
+2019-04-30 23:01:20,382 - TestOrmucoLogin - INFO - warning mesage:The user or password is incorrect.
+2019-04-30 23:01:20,383 - TestOrmucoLogin - INFO - 
+=== start to test case: test3_login_password_invalid ===
+
+2019-04-30 23:01:20,918 - OperatePage - INFO - Refresh page .
+2019-04-30 23:01:20,923 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:01:21,626 - OperatePage - INFO - Successe to find element by id via value: username 
+2019-04-30 23:01:22,193 - OperatePage - INFO - input ' henrychang1413@gmail.com ' 
+2019-04-30 23:01:24,234 - OperatePage - INFO - Successe to find element by id via value: password 
+2019-04-30 23:01:24,404 - OperatePage - INFO - input ' ormu12345e ' 
+2019-04-30 23:01:24,404 - TestOrmucoLogin - INFO - Username :henrychang1413@gmail.com  Password:ormu12345e
+2019-04-30 23:01:26,440 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:26,455 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:26,557 - OperatePage - INFO - The element ' Sign in ' was clicked.
+2019-04-30 23:01:31,407 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_01.png 
+2019-04-30 23:01:31,419 - OperatePage - INFO - Successe to find element by xpath via value: //span[@class='warning'] 
+2019-04-30 23:01:31,441 - TestOrmucoLogin - INFO - warning mesage:The user or password is incorrect.
+2019-04-30 23:01:31,441 - TestOrmucoLogin - INFO - 
+=== start to test case: test4_login_password_invalid2 ===
+
+2019-04-30 23:01:31,936 - OperatePage - INFO - Refresh page .
+2019-04-30 23:01:31,944 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:01:32,586 - OperatePage - INFO - Successe to find element by id via value: username 
+2019-04-30 23:01:33,109 - OperatePage - INFO - input ' henrychang1413@gmail.com ' 
+2019-04-30 23:01:35,133 - OperatePage - INFO - Successe to find element by id via value: password 
+2019-04-30 23:01:35,907 - OperatePage - INFO - input ' ormu123!!!!.....&&&&&&2342______!!!!!#####sljslafldajflasjdlsjlsajlsfsdfsfffdsfsdfsdfsfsfsgrhh45e ' 
+2019-04-30 23:01:35,907 - TestOrmucoLogin - INFO - Username :henrychang1413@gmail.com  Password:ormu123!!!!.....&&&&&&2342______!!!!!#####sljslafldajflasjdlsjlsajlsfsdfsfffdsfsdfsdfsfsfsgrhh45e
+2019-04-30 23:01:37,938 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:37,964 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:38,078 - OperatePage - INFO - The element ' Sign in ' was clicked.
+2019-04-30 23:01:42,914 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_01.png 
+2019-04-30 23:01:42,927 - OperatePage - INFO - Successe to find element by xpath via value: //span[@class='warning'] 
+2019-04-30 23:01:42,953 - TestOrmucoLogin - INFO - warning mesage:The user or password is incorrect.
+2019-04-30 23:01:42,953 - TestOrmucoLogin - INFO - 
+=== start to test case: test5_login_ormuco_username_password_valid ===
+
+2019-04-30 23:01:43,447 - OperatePage - INFO - Refresh page .
+2019-04-30 23:01:43,452 - OperatePage - INFO - wait for 20 seconds.
+2019-04-30 23:01:44,108 - OperatePage - INFO - Successe to find element by id via value: username 
+2019-04-30 23:01:44,614 - OperatePage - INFO - input ' henrychang1413@gmail.com ' 
+2019-04-30 23:01:44,637 - OperatePage - INFO - Successe to find element by id via value: password 
+2019-04-30 23:01:44,907 - OperatePage - INFO - input ' ormu1234567890 ' 
+2019-04-30 23:01:44,907 - TestOrmucoLogin - INFO - Username :henrychang1413@gmail.com  Password:ormu1234567890
+2019-04-30 23:01:46,937 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:46,960 - OperatePage - INFO - Successe to find element by xpath via value: //button[contains(text(),'Sign in')] 
+2019-04-30 23:01:47,074 - OperatePage - INFO - The element ' Sign in ' was clicked.
+2019-04-30 23:01:54,699 - OperatePage - INFO - Take screenshot and save to folder: D:\selenium\python_selenium_framework\screenshots\2019-04-30-23_01.png 
+2019-04-30 23:01:54,706 - OperatePage - INFO - Current page title is Portal - Ormuco
+2019-04-30 23:01:54,719 - OperatePage - INFO - Current page title is Portal - Ormuco
+2019-04-30 23:01:54,725 - TestOrmucoLogin - INFO - Portal - Ormuco
+2019-04-30 23:01:54,746 - OperatePage - INFO - Successe to find element by xpath via value: //*[@id='portal_main_scroll_content']/div/div[1]/h1 
+2019-04-30 23:01:54,773 - TestOrmucoLogin - INFO - welcome mesage:Welcome to your Ormuco Cloud Portal!

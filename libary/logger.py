@@ -3,9 +3,9 @@
 # email : henrychang1413@gmail.com
 
 import logging
-import os.path
 import time
-
+import os.path
+import globalparam
 
 class Logger(object):
 
@@ -18,10 +18,9 @@ class Logger(object):
 
         # create one handler to write log into one file
         ctime = time.strftime('%Y-%m-%d-%H_%M', time.localtime())
+        lname =  ctime + '.log'
+        log_name = os.path.join(globalparam.log_path, lname)
 
-        # log_path
-        log_path = os.path.dirname(os.path.abspath('.')) + '\\logs\\'
-        log_name = log_path + ctime + '.log'
         fh = logging.FileHandler(log_name)
         fh.setLevel(logging.INFO)
 
