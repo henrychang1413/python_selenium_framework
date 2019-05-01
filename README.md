@@ -4,9 +4,9 @@ python automation framework design for UI test and interface test.  this framewo
 
 a: test login  "uat.ormuco.com" with different username and password
 
-b: test google search different content.
+b: test google search with different keywords.
 
-c: test number convert functions
+c: test number convert functions, such as binary convert decimal, decimal convert to Hexadimal
 
 # How to run the framework?
 
@@ -19,7 +19,7 @@ c: test number convert functions
 3). execute python unittest command to run test suites.
     it will generate HTML report under report folder
 
-    python -m python -m unittest test_suite
+    python -m unittest test_suite
 
 
 # Test report 
