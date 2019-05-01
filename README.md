@@ -1,8 +1,6 @@
-# automation_framework
+# automation_framework introduction
 
-python automation framework design for UI test and interface test.
-
-this framework test modules:
+python automation framework design for UI test and interface test.  this framework use Python3 unittest framework. include 3 suites.
 
 a: test login  "uat.ormuco.com" with different username and password
 
@@ -10,7 +8,7 @@ b: test google search different content.
 
 c: test number convert functions
 
-Use Python3 languange.
+# How to run the framework?
 
 1). Install all the dependencies
     pip install -r requirements.txt
@@ -24,7 +22,7 @@ Use Python3 languange.
     python -m python -m unittest test_suite
 
 
-4) test report 
+# Test report 
 
 ![alt text](https://github.com/henrychang1413/python_selenium_framework/blob/master/report.png)
 
